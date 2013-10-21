@@ -10,6 +10,7 @@
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 		<style type="text/css">
 			body {
+				font-family: Verdana, Arial;
 				background: url(fundo.png) repeat top left #FFF;
 				padding: 0px;
 				margin: 0px;
@@ -24,9 +25,33 @@
 			
 			div.texto {
 				width: 100%;
-				padding-top: 25px;
+				padding: 10px;
 				text-align: center;
-				background: url(fundo_barra.png) repeat-x top left transparent;
+				background: #FFF;
+				box-shadow:  0px 0px 20px 5px #fff;
+			}
+			
+			div.unidade {
+				text-align: left;
+				display: inline-block;
+				width: 250px;
+			}
+			
+			div.unidade.dois {
+				margin-left: 100px;
+			}
+			
+			div.unidade h2{
+				font-size: 16px;
+				color: #C00;
+				font-weight: bold;
+				margin: 5px 0px;
+			}
+			
+			div.unidade address{
+				font-size: 14px;
+				color: #333;
+				font-style: normal;
 			}
 		</style>
 	</head>
@@ -34,7 +59,18 @@
 	<body>
 		<div class="logo"></div>
 		<div class="texto">
-			<a href="http://www.valerestaurantes.com.br/cardapio/sao-jose-dos-campos-sp/batera-lanches?utm_source=site-batera&utm_medium=banner-pedido&utm-campaign=site-parceiros" title="Fazer pedido pela internet"><img src="texto.png" alt="Clique aqui e faça seu pedido pela internet no ValeRestaurantes" /></a>
+			<div class="unidade um">
+				<h2>Batera Lanches I</h2>
+				<address>Rua Antônio José Matos Lima, 742<br  />Residencial União</address>
+				<br />
+				<a href="http://www.valerestaurantes.com.br/cardapio/sao-jose-dos-campos-sp/batera-lanches?utm_source=site-batera&utm_medium=banner-pedido&utm-campaign=site-parceiros" title="Fazer pedido pela internet na unidade I - Residencial União"><img src="botao.png" alt="Clique aqui e faça seu pedido pela internet no ValeRestaurantes" /></a>
+			</div>
+			<div class="unidade dois">
+				<h2>Batera Lanches II</h2>
+				<address>Rua Planura, 200<br />Bosque dos Eucaliptos</address>
+				<br />
+				<a href="http://www.valerestaurantes.com.br/cardapio/sao-jose-dos-campos-sp/batera-lanches-2?utm_source=site-batera&utm_medium=banner-pedido&utm-campaign=site-parceiros" title="Fazer pedido pela internet na unidade II - Bosque dos Eucaliptos"><img src="botao.png" alt="Clique aqui e faça seu pedido pela internet no ValeRestaurantes" /></a>
+			</div>
 		</div>
 	</body>
 </html>
